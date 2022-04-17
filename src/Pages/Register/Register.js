@@ -47,7 +47,7 @@ const Register = () => {
             <div className="form-container w-50 mx-auto">
               <Form onSubmit={handleRegister} className="register-form">
                 <div>
-                  <input type="text" name="name" id="name" placeholder='Your Name' />
+                  <input type="text" name="name" id="name" placeholder='Your Name' required />
                 </div>
 
                 <div>
