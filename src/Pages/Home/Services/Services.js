@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
+// import CheckOut from '../../CheckOut/CheckOut';
 import Service from '../Service/Service';
 
 const Services = () => {
