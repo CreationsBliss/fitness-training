@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo/fitness-training-logo.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -34,7 +34,7 @@ const Header = () => {
             </Nav>
             <Nav>
               {
-                user ? <button onClick={handleSignOut} > Sign Out </button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>
+                user ? <Button  variant="link" style={{color: "rgba(255,255,255,.55)"}} className='text-decoration-none ' onClick={handleSignOut} > Sign Out </Button> : <Nav.Link as={Link} to='/login'>Login</Nav.Link>
               }
             </Nav>
           </Navbar.Collapse>
