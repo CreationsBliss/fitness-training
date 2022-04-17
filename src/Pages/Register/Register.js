@@ -5,6 +5,7 @@ import auth from '../../firebase.init';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Register.css'
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
 
@@ -61,6 +62,9 @@ const Register = () => {
               </Form>
               <p className='login-link my-3'>Already user to FITNESS TRAINING?  <Link to="/login" className='text-danger' onClick={navigateLogin} >Login Now</Link>
               </p>
+            </div>
+            <div className='mt-5 w-100 text-center'>
+              <SocialLogin></SocialLogin>
             </div>
           </Col>
         </Row>
