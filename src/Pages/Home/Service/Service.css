@@ -1,0 +1,7 @@
+.service-box{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.service-detail{
+  padding: 30px;
+}
