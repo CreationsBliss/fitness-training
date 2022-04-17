@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 const CheckOut = () => {
   // const { serviceId } = useParams();
@@ -14,15 +14,17 @@ const CheckOut = () => {
               <Form>
                 <Row className="mb-3">
                   <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="textl" placeholder="First name" />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control type="text" placeholder="Last name" />
                   </Form.Group>
                 </Row>
+
+                <Form.Group className="mb-3" controlId="formGridAddress1">
+                <Form.Control type="email" placeholder="Email address" />
+                </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGridAddress1">
                   <Form.Label>Address</Form.Label>
@@ -54,12 +56,8 @@ const CheckOut = () => {
                   </Form.Group>
                 </Row>
 
-                <Form.Group className="mb-3" id="formGridCheckbox">
-                  <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-
                 <Button variant="primary" type="submit">
-                  Submit
+                  Continue to Payment
                 </Button>
               </Form>
             </div>
