@@ -1,11 +1,12 @@
 import React from 'react';
+import './CheckOut.css'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 // import { useParams } from 'react-router-dom';
 
 const CheckOut = () => {
   // const { serviceId } = useParams();
   return (
-    <div>
+    <div className='checkout-section'>
       <Container>
         <h1 className='text-center my-5'>Billing Details</h1>
         <Row>
