@@ -1,8 +1,27 @@
-# Getting Started with Create React App
+# FITNESS TRAINING
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fitness training [Create React App](https://fitness-training-b7927.firebaseapp.com/).
 
-## Available Scripts
+
+## Website features
+
+*This is a gym trainer wwebsite
+*It has functional login system
+*It has functional register system
+*This site has google sign in method
+*Use can not go to checkout page without login
+
+
+
+## Framework or Library used in this project
+
+*React
+*React Router
+*Firebase
+*React Firebase Hooks
+*React Bootstrap
+
+
 
 In the project directory, you can run:
 

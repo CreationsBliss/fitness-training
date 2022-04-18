@@ -9,11 +9,12 @@ const SocialLogin = () => {
 
   const navigate = useNavigate();
 
-let errorElement;
+  let errorElement;
+  
   if (error) {
     errorElement = <div>
-        <p className='text-danger'>Error: {error.message}</p>
-      </div>
+      <p className='text-danger'>Error: {error.message}</p>
+    </div>
   }
 
   if (user) {
@@ -22,8 +23,8 @@ let errorElement;
 
   return (
     <div>
-      <button className='btn btn-primary mb-5' onClick={() => signInWithGoogle()} >Google Sign In</button>
       {errorElement}
+      <button className='btn btn-primary mb-5' onClick={() => signInWithGoogle()} >Google Sign In</button>
     </div>
   );
 };

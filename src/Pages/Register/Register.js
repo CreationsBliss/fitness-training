@@ -14,7 +14,7 @@ const Register = () => {
     user,
     loading,
     error,
-  ] = useCreateUserWithEmailAndPassword(auth);
+  ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
   const navigate = useNavigate();
 
@@ -32,15 +32,13 @@ const Register = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    console.log(name, email, password);
-
     createUserWithEmailAndPassword(email, password);
 
 
   }
 
   return (
-    <div>
+    <div className='register-section'>
       <Container>
         <h1 className='text-center my-5'>Register to Your Account</h1>
         <Row>
@@ -58,7 +56,7 @@ const Register = () => {
                 <div>
                   <input type="password" name="password" id="password" placeholder='Your Password' required />
                 </div>
-                <input type="submit" value="Register" />
+                <input type="submit" value="Register" className='btn btn-primary register-btn' />
               </Form>
               <p className='login-link my-3'>Already user to FITNESS TRAINING?  <Link to="/login" className='text-danger' onClick={navigateLogin} >Login Now</Link>
               </p>

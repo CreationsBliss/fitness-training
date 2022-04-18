@@ -1,3 +1,20 @@
-.register-link{
+.register-link {
   cursor: pointer;
+}
+
+.login-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.resetPasswordBtn{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+.resetPasswordBtn:focus{
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 0 0 0 white !important;
 }

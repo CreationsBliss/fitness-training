@@ -1,0 +1,6 @@
+.about-me-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

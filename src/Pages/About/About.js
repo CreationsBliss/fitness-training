@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import './About.css'
 
 const About = () => {
   return (
-    <div>
+    <div className='about-me-container'>
       <Container>
         <h1 className='text-center my-5'>About Me</h1>
         <Row>
