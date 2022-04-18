@@ -1,6 +1,6 @@
 # FITNESS TRAINING
 
-Fitness training [Create React App](https://fitness-training-b7927.firebaseapp.com/).
+ [Fitness training](https://fitness-training-b7927.firebaseapp.com/).
 
 
 ## Website features
